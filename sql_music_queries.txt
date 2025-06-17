@@ -1,10 +1,10 @@
-Q1.Who is the senior most emplyee based on job title?
+/*Q1.Who is the senior most emplyee based on job title?*/
 
 Select * from employee
 order by levels desc
 limit 1
 
-Q2.Which countries have the most invoices?
+/*Q2.Which countries have the most invoices?*/
 
 select * from invoice
 select count(billing_country)as c,billing_country from invoice
@@ -12,7 +12,7 @@ group by billing_country
 order by c desc
 limit 1
 
-Q3.What are the top 3 values of total invoice?
+/*Q3.What are the top 3 values of total invoice?*/
 
 select * from invoice
 select total from invoice
